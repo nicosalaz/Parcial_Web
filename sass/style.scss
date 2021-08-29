@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F9574C;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    //align-items: center;
+    //align-content: center;
+}
+
+#reproductor{
+    width: 25vw;
+    height: 90vh;
+    background-color: aqua;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    #parte-superior{
+        width: auto;
+        height: 60%;
+        background-color: blueviolet;
+        #logo{
+            width: 100%;
+            height: 100%;
+        }
+        #botones{
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25vw;
+            height: 7%;
+            //background-color: cadetblue;
+            #menu{
+                width: 13%;
+                border-radius: 30px;
+                border-style: none;
+                background-color: transparent;
+                margin: 4px 0px 0px 4px;
+            }#busqueda{
+                width: 13%;
+                border-radius: 30px;
+                border-style: none;
+                background-color: transparent;
+                margin: 4px 4px 0px 0px;
+            }
+        }
+    }
+    #parte-inferior{
+        width: auto;
+        height: 40%;
+        background-color: #1C1C1C;
+    }
+}
+#reproductor{
+    #parte-superior{
+        #botones{   
+            #menu:hover{
+                transition: all 0.5s ease-out;
+                background-color: grey;
+                cursor: hand;
+                cursor: pointer;
+                svg{
+                    fill: white;
+                }
+            }#busqueda:hover{
+                transition: all 0.5s ease-out;
+                background-color: grey;
+                cursor: hand;
+                cursor: pointer;
+                svg{
+                    fill: white;
+                }
+            }
+        }
+    }
+}
