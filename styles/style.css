@@ -13,15 +13,14 @@ body {
 #reproductor {
   width: 25vw;
   height: 90vh;
-  background-color: aqua;
   margin-top: 5vh;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 5px 10px black;
 }
 #reproductor #parte-superior {
   width: auto;
   height: 60%;
-  background-color: blueviolet;
 }
 #reproductor #parte-superior #logo {
   width: 100%;
@@ -50,9 +49,87 @@ body {
   margin: 4px 4px 0px 0px;
 }
 #reproductor #parte-inferior {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: auto;
   height: 40%;
   background-color: #1C1C1C;
+}
+#reproductor #parte-inferior #cancion {
+  width: auto;
+  height: 15%;
+  margin: 60px 0px 0 0px;
+}
+#reproductor #parte-inferior #cancion #titulo {
+  display: flex;
+  justify-content: center;
+}
+#reproductor #parte-inferior #cancion #titulo h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+#reproductor #parte-inferior #cancion #artista {
+  display: flex;
+  justify-content: center;
+}
+#reproductor #parte-inferior #cancion #artista h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  color: grey;
+}
+#reproductor #parte-inferior #controles {
+  width: auto;
+  height: 15%;
+  margin: 0px 0px 0px 0px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#reproductor #parte-inferior #controles button {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  margin: 0px 10px 0px 10px;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 30px;
+}
+#reproductor #parte-inferior #controles #musica {
+  display: flex;
+  position: relative;
+  margin: 0px 8px 0px 8px;
+}
+#reproductor #parte-inferior #controles #musica #play {
+  display: inline;
+}
+#reproductor #parte-inferior #controles #musica #stop {
+  display: none;
+}
+#reproductor #parte-inferior #nav {
+  width: auto;
+  height: 20%;
+}
+#reproductor #parte-inferior #nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#reproductor #parte-inferior #nav ul li {
+  display: inline;
+}
+#reproductor #parte-inferior #nav ul li #boton-nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: transparent;
 }
 
 #reproductor #parte-superior #botones #menu:hover {
@@ -72,6 +149,36 @@ body {
 }
 #reproductor #parte-superior #botones #busqueda:hover svg {
   fill: white;
+}
+
+#reproductor #parte-inferior #nav ul li #boton-nav:hover {
+  background-color: grey;
+  cursor: hand;
+  cursor: pointer;
+}
+#reproductor #parte-inferior #nav ul li #boton-nav:hover svg {
+  fill: white;
+}
+
+#reproductor #parte-inferior #controles button:hover {
+  background-color: grey;
+  cursor: hand;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: black;
+  }
+
+  #reproductor {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  #reproductor #parte-superior #botones {
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
