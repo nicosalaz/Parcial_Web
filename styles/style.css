@@ -67,7 +67,7 @@ body {
 }
 #reproductor #parte-inferior #cancion #titulo h5 {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   color: white;
 }
 #reproductor #parte-inferior #cancion #artista {
@@ -76,7 +76,7 @@ body {
 }
 #reproductor #parte-inferior #cancion #artista h6 {
   font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   color: grey;
 }
 #reproductor #parte-inferior #controles {
